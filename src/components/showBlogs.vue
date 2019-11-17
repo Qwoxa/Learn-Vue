@@ -5,7 +5,7 @@
     <input type="text" v-model="search" placeholder="search blogs" />
 
     <div v-for="blog in filteredBlogs" :key="blog.id" class="single-blog">
-      <router-link :to="`/blog/${blog.id}`">
+      <router-link v-if="blog.id != -1" :to="`/blog/${blog.id}`">
         <h2>{{ blog.title | to-uppercase }}</h2>
       </router-link>
       <p>{{ blog.content | snippet }}</p>
@@ -23,7 +23,7 @@ export default {
       blogs: [
         {
           title: "No posts found",
-          id: "#",
+          id: -1,
           content:
             "Posts are not found. Probably you have problems with connection.."
         }
@@ -65,6 +65,7 @@ export default {
 };
 </script>
 
+
 <style scoped>
 #show-blogs,
 input {
@@ -72,11 +73,18 @@ input {
   margin: 0 auto;
 }
 
+#show-blogs {
+  background: #ddd;
+  padding: 20px
+}
+
 input {
   width: 100%;
   padding: 2px 5px;
 }
+</style>
 
+<style>
 .single-blog {
   padding: 20px;
   margin: 20px 0;

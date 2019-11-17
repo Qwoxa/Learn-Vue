@@ -1,5 +1,5 @@
 <template>
-  <div id="single-blog">
+  <div class="single-blog">
     <h1>{{ blog.title }}</h1>
     <article>{{ blog.content }}</article>
     <p>Author: {{ blog.author }}</p>
@@ -26,10 +26,3 @@ export default {
   }
 };
 </script>
-
-<style scoped>
-#single-blog {
-  max-width: 800px;
-  margin: 0 auto;
-}
-</style>
