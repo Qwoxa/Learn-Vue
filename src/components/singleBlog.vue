@@ -2,6 +2,11 @@
   <div id="single-blog">
     <h1>{{ blog.title }}</h1>
     <article>{{ blog.content }}</article>
+    <p>Author: {{ blog.author }}</p>
+
+    <ul>
+      <li v-for="category in blog.categories" :key="category">{{ category }}</li>
+    </ul>
   </div>
 </template>
 
@@ -17,7 +22,7 @@ export default {
     this.$http
       .get(`https://vue-series.firebaseio.com/posts/${this.id}.json`)
       .then(response => response.json())
-      .then(data = this.blog = data);
+      .then(data => this.blog = data);
   }
 };
 </script>
