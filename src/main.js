@@ -29,12 +29,11 @@ Vue.directive('theme', {
   }
 });
 
-
 // Custom filters
-Vue.filter('snippet', value => 
+Vue.filter('snippet', value =>
   value.length > 100 ?
-  value.slice(0, 97) + '...' :
-  value
+    value.slice(0, 97) + '...' :
+    value
 );
 
 new Vue({

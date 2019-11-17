@@ -6,22 +6,22 @@
 </template>
 
 <script>
-import addBlog from './components/addBlog';
-import showBlogs from './components/showBlogs';
-import header from './components/header';
+import addBlog from "./components/addBlog";
+import showBlogs from "./components/showBlogs";
+import header from "./components/header";
 
 export default {
   components: {
-    ['add-blog']: addBlog,
-    ['show-blogs']: showBlogs,
-    ['app-header']: header,
+    ["add-blog"]: addBlog,
+    ["show-blogs"]: showBlogs,
+    ["app-header"]: header
   },
   data() {
     return {
-      number: '',
-      comment: '',
-      component: 'Header'
-    }
+      number: "",
+      comment: "",
+      component: "Header"
+    };
   },
   methods: {
     handlesubmit() {
@@ -29,11 +29,10 @@ export default {
       Comment: ${this.comment}`);
     }
   },
-  name: 'app'
-}
+  name: "app"
+};
 </script>
 
 
 <style>
-
 </style>
