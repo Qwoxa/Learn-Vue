@@ -4,7 +4,6 @@ import VueResource from 'vue-resource';
 import VueRouter from 'vue-router';
 import Routes from './routes';
 
-export const bus = new Vue();
 
 Vue.use(VueResource);
 Vue.use(VueRouter);
