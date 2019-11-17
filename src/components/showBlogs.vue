@@ -71,7 +71,7 @@ export default {
 <style scoped>
 #show-blogs,
 input {
-  max-width: 800px;
+  max-width: 790px;
   margin: 0 auto;
 }
 
@@ -84,22 +84,8 @@ input {
   text-align: right;
 }
 
-#show-blogs {
-  background: #ddd;
-  padding: 20px
-}
-
 input {
   width: 100%;
   padding: 2px 5px;
-}
-</style>
-
-<style>
-.single-blog {
-  padding: 20px;
-  margin: 20px 0;
-  box-sizing: border-box;
-  background: #eee;
 }
 </style>

@@ -35,4 +35,15 @@ export default {
 
 
 <style>
+.single-blog {
+  padding: 20px;
+  margin: 20px 0;
+  box-sizing: border-box;
+  background: #eee;
+}
+
+#show-blogs {
+  background: #ddd;
+  padding: 20px
+}
 </style>
