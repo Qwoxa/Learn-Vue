@@ -1,6 +1,6 @@
 <template>
   <div id="show-blogs">
-    <div class="single-blog" id="blog">
+    <div class="single-blog">
       <router-link class="back" :to="'/'">Back</router-link>
       <h1>{{ blog.title }}</h1>
       <article>{{ blog.content }}</article>
