@@ -1,0 +1,10 @@
+{
+  "files.exclude": {
+    ".babelrc": true,
+    ".editorconfig": true,
+    "package-lock.json": true,
+    "webpack.config.js": true,
+    "node_modules": true,
+    ".gitignore": true
+  }
+}
