@@ -38,7 +38,6 @@ a {
 nav {
   background: #444;
   padding: 14px 0;
-  margin-bottom: 40px;
 }
 
 .router-link-exact-active {
