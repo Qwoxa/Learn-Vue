@@ -1,5 +1,6 @@
 <template>
-  <div class="single-blog">
+  <div class="single-blog" id="blog">
+    <router-link :to="'/'">Back</router-link>
     <h1>{{ blog.title }}</h1>
     <article>{{ blog.content }}</article>
     <p>Author: {{ blog.author }}</p>
@@ -26,3 +27,11 @@ export default {
   }
 };
 </script>
+
+
+<style scoped>
+#blog {
+  max-width: 800px;
+  margin: 0 auto;
+}
+</style>

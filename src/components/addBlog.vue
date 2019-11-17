@@ -90,7 +90,7 @@ export default {
 
 #add-blog {
   margin: 20px auto;
-  max-width: 500px;
+  max-width: 800px;
 }
 
 label {
