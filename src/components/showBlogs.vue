@@ -2,7 +2,7 @@
   <div v-theme="'narrow'" id="show-blogs">
     <h1>All Blog Articles</h1>
 
-    <input type="text" v-model="search" placeholder="search blogs" />
+    <input type="text" v-model="search" placeholder="search blogs" class="single-blog" />
 
     <div v-for="blog in filteredBlogs" :key="blog.id" class="single-blog">
       <router-link class="link" v-if="blog.id != -1" :to="`/blog/${blog.id}`">
@@ -71,8 +71,11 @@ export default {
 <style scoped>
 #show-blogs,
 input {
-  max-width: 790px;
   margin: 0 auto;
+}
+
+input {
+  background: #fff;
 }
 
 .link {
