@@ -5,10 +5,12 @@
     <input type="text" v-model="search" placeholder="search blogs" />
 
     <div v-for="blog in filteredBlogs" :key="blog.id" class="single-blog">
-      <router-link v-if="blog.id != -1" :to="`/blog/${blog.id}`">
+      <router-link class="link" v-if="blog.id != -1" :to="`/blog/${blog.id}`">
         <h2>{{ blog.title | to-uppercase }}</h2>
       </router-link>
       <p>{{ blog.content | snippet }}</p>
+
+      <p class="author">{{ blog.author }}</p>
     </div>
   </div>
 </template>
@@ -71,6 +73,15 @@ export default {
 input {
   max-width: 800px;
   margin: 0 auto;
+}
+
+.link {
+  text-decoration: none;
+  color: #222;
+}
+
+.author {
+  text-align: right;
 }
 
 #show-blogs {
